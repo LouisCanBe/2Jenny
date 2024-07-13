@@ -82,5 +82,38 @@
     <footer class="container">
         <p>&copy; 2024 Jenny's Blog</p>
     </footer>
+
+    <!-- 写一个生日快乐按钮 -->
+    <button id="birthdayButton">🎉 Happy Birthday! 🎉</button>
+    <!-- 按钮居中 -->
+    <style>
+        #birthdayButton {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: #50b3a2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+
+    <script>
+        // 点击按钮时显示生日祝福
+        document.getElementById("birthdayButton").addEventListener("click", function() {
+           
+            // 多行文字
+            alert("🎉 Happy Birthday to you! 🎉\n" +
+                "❤ 爱你哦~小宝 ❤")
+            // 跳转到另一个页面
+            window.location.href = "wishes.html";
+
+
+        });
+    </script>
+
+
 </body>
 </html>
